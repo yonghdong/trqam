@@ -1,0 +1,11 @@
+__pycache__/
+.vscode/
+dist/
+*.py[cod]
+*$py.class
+*.egg-info/
+.DS_Store
+.idea/
+.ruff_cache/
+exp/
+logs/
