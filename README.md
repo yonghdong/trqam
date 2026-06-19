@@ -98,6 +98,16 @@ These only affect the critic update, so they matter for fine-tuning (Step 2) but
 
 </details>
 
+<details>
+<summary><b>Action chunking horizon</b> (`--horizon_length`)</summary>
+
+- **Navigation domains** (`humanoidmaze-*`, `antmaze-*`): `--horizon_length=1`.
+- **All other domains** (manipulation: `cube-*`, `puzzle-*`, `scene`; Robomimic): `--horizon_length=5`.
+
+Like the network size, `horizon_length` changes the (chunked) action dimension, so it must match between the BC pretrain and fine-tuning commands; otherwise the saved checkpoint won't load.
+
+</details>
+
 ### Step 1: BC pretraining (300K steps)
 
 Train a BC-only flow policy with the TRQAM agent (`agents/trqam.py --bc_only=True`). The resulting checkpoint at `exp/trqam/bc_pretrain/<env_name>/<exp_name>/params_300000.pkl` is reusable across TRQAM, QAM, QAM-E, FQL, DSRL, CGQL, IFQL.
