@@ -285,7 +285,7 @@ This codebase is built on top of [QC](https://github.com/colinqiyangli/qc) and [
 ## BibTeX
 ```
 @inproceedings{dong2026trqam,
-    author    = {Dong, Yonghoon and Lee, Kyungmin and Kim, Changyeon and Kim, Jaehyuk and Shin, Jinwoo},
+    author    = {Yonghoon Dong and Kyungmin Lee and Changyeon Kim and Jaehyuk Kim and Jinwoo Shin},
     title     = {Trust Region Q Adjoint Matching},
     booktitle = {Advances in Neural Information Processing Systems},
     year      = {2026}
