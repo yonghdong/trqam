@@ -127,6 +127,34 @@ MUJOCO_GL=egl python main.py --run_group=bc_pretrain --agent=agents/trqam.py --t
 
 </details>
 
+<details>
+<summary><b>Pretrained BC checkpoints</b> (skip Step 1)</summary>
+
+The BC checkpoints used in the paper, one per OGBench domain, are on Hugging Face at
+[`yonghoon96/trqam-bc-checkpoints`](https://huggingface.co/yonghoon96/trqam-bc-checkpoints). Each
+folder holds a `params_300000.pkl` that loads directly through `--pretrained_actor_path`, and a
+`config.json` with the network settings it was trained with. BC uses no reward, so one checkpoint
+serves all five tasks of its domain.
+
+```bash
+pip install huggingface_hub
+
+python -c "
+from huggingface_hub import snapshot_download
+path = snapshot_download(repo_id='yonghoon96/trqam-bc-checkpoints', local_dir='bc_checkpoints')
+print(f'Checkpoints saved to: {path}')
+"
+
+# e.g. for any cube-triple task
+BC_CKPT=bc_checkpoints/cube-triple-play/params_300000.pkl
+```
+
+Folder names carry no dataset size. `antmaze-giant`, `puzzle-4x4` and `cube-triple` were trained on
+the 10M datasets and `cube-quadruple` on the 100M dataset, so use the 1024-wide network flags above
+for those four.
+
+</details>
+
 ### Step 2: Off-policy fine-tuning
 
 Load the BC checkpoint via `--pretrained_actor_path`. Network-size flags must match Step 1.
@@ -135,8 +163,9 @@ Load the BC checkpoint via `--pretrained_actor_path`. Network-size flags must ma
 <summary>Example commands (<code>cube-triple-task2</code>; TRQAM / QAM / QAM-E)</summary>
 
 ```bash
-# Path to the BC checkpoint from Step 1
+# Path to the BC checkpoint from Step 1, or the downloaded one
 BC_CKPT=exp/trqam/bc_pretrain/cube-triple-play-singletask-task2-v0/<exp_name>/params_300000.pkl
+# BC_CKPT=bc_checkpoints/cube-triple-play/params_300000.pkl
 
 # Common flags
 COMMON="--env_name=cube-triple-play-singletask-task2-v0 --sparse=False --horizon_length=5 \
@@ -243,15 +272,22 @@ python ~/robomimic/robomimic/scripts/download_datasets.py \
 
 </details>
 
+## Experiment data
+
+The per-seed success curves behind the OGBench results, for TRQAM and the six baselines on all 50
+tasks, are in [`exp_data/`](exp_data), in the same format as the
+[QAM release](https://github.com/ColinQiyangLi/qam/tree/main/exp_data).
+`python exp_data/reproduce.py` rebuilds the offline results table from them.
+
 ## Acknowledgments
 This codebase is built on top of [QC](https://github.com/colinqiyangli/qc) and [QAM](https://github.com/ColinQiyangLi/qam).
 
 ## BibTeX
 ```
-@article{dong2026trqam,
-    title   = {Trust Region Q Adjoint Matching},
-    author  = {Dong, Yonghoon and Lee, Kyungmin and Kim, Changyeon and Kim, Jaehyuk and Shin, Jinwoo},
-    journal = {arXiv preprint arXiv:2605.27079},
-    year    = {2026}
+@inproceedings{dong2026trqam,
+    author    = {Dong, Yonghoon and Lee, Kyungmin and Kim, Changyeon and Kim, Jaehyuk and Shin, Jinwoo},
+    title     = {Trust Region Q Adjoint Matching},
+    booktitle = {Advances in Neural Information Processing Systems},
+    year      = {2026}
 }
 ```
