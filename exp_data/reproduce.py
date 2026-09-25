@@ -1,6 +1,6 @@
 """Reproduce the offline results table (1M steps) from trqam-exp-data.pkl alone.
 
-The offline endpoint is 1M steps, row 19 of each (30, 8) array. Cells are the seed mean and the
+The offline endpoint is 1M steps, row 20 of each (31, 8) array. Cells are the seed mean and the
 sample standard deviation (ddof = 1) in per cent, rounded half up.
 
     python exp_data/reproduce.py            every domain, and the all row
@@ -13,7 +13,7 @@ METHODS = ["FQL", "CGQL-L", "DSRL", "IFQL", "QAM", "QAM-E", "TRQAM"]
 DOMAINS = ["antmaze-large-navigate", "antmaze-giant-navigate", "humanoidmaze-medium-navigate",
            "humanoidmaze-large-navigate", "scene-play", "puzzle-3x3-play", "puzzle-4x4-play",
            "cube-double-play", "cube-triple-play", "cube-quadruple-play"]
-ROW_1M = 19                                      # 50K * (19 + 1)
+ROW_1M = 20                                      # row i is step 50K * i
 R = lambda x: int(np.floor(x + 0.5))
 
 ap = argparse.ArgumentParser()
