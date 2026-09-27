@@ -283,7 +283,7 @@ tasks, are in [`exp_data/`](exp_data), in the same format as the
 This codebase is built on top of [QC](https://github.com/colinqiyangli/qc) and [QAM](https://github.com/ColinQiyangLi/qam).
 
 ## BibTeX
-```
+```bibtex
 @inproceedings{dong2026trqam,
     author    = {Yonghoon Dong and Kyungmin Lee and Changyeon Kim and Jaehyuk Kim and Jinwoo Shin},
     title     = {Trust Region Q Adjoint Matching},
