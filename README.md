@@ -4,17 +4,17 @@
   <a href="https://yonghdong.github.io" target="_blank">Yonghoon&nbsp;Dong</a><sup>1</sup> &ensp; <b>&middot;</b> &ensp;
   <a href="https://kyungmnlee.github.io/" target="_blank">Kyungmin&nbsp;Lee</a><sup>1</sup> &ensp; <b>&middot;</b> &ensp;
   <a href="https://changyeon.site/" target="_blank">Changyeon&nbsp;Kim</a><sup>1</sup> &ensp; <b>&middot;</b> &ensp;
-  <a href="#" target="_blank">Jaehyuk&nbsp;Kim</a><sup>2</sup> &ensp; <b>&middot;</b> &ensp;
-  <a href="https://alinlab.kaist.ac.kr/shin.html" target="_blank">Jinwoo&nbsp;Shin</a><sup>1,3</sup>
+  <a href="#" target="_blank">Jaehyuk&nbsp;Kim</a><sup>1</sup> &ensp; <b>&middot;</b> &ensp;
+  <a href="https://alinlab.kaist.ac.kr/shin.html" target="_blank">Jinwoo&nbsp;Shin</a><sup>1,2</sup>
   <br>
-  <sup>1</sup>KAIST &emsp; <sup>2</sup>Seoul National University &emsp; <sup>3</sup>RLWRLD &emsp; <br>
+  <sup>1</sup>KAIST &emsp; <sup>2</sup>RLWRLD &emsp; <br>
 </div>
 
 <h3 align="center"><a href="https://arxiv.org/abs/2605.27079">Paper</a> &emsp; <a href="https://yonghdong.github.io/blog/trqam/">Blog</a></h3>
 
 
 <p align="center">
-  <img alt="TRQAM main figure" src="./assets/Main_figure.png" width="100%">
+  <img alt="TRQAM overview" src="./assets/trqam_overview.svg" width="100%">
 </p>
 
 <b>Summary</b>: Trust Region Q Adjoint Matching (TRQAM) is a stable off-policy RL algorithm for fine-tuning pretrained flow policies under a path-space KL trust region against the pretrained policy, enforced via dual descent. On 50 OGBench tasks, TRQAM reaches 68% aggregate offline success, compared to 46% for the strongest baseline.
