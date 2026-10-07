@@ -10,7 +10,12 @@
   <sup>1</sup>KAIST &emsp; <sup>2</sup>RLWRLD &emsp; <br>
 </div>
 
-<h3 align="center"><a href="https://arxiv.org/abs/2605.27079">Paper</a> &emsp; <a href="https://yonghdong.github.io/blog/trqam/">Blog</a></h3>
+<p align="center"><b>NeurIPS 2026</b></p>
+<p align="center">
+  <a href="https://arxiv.org/pdf/2605.27079"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/buttons/btn_paper_dark.svg"><img alt="paper" src="./assets/buttons/btn_paper.svg" height="36"></picture></a>&nbsp;
+  <a href="https://arxiv.org/abs/2605.27079"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/buttons/btn_arxiv_dark.svg"><img alt="arxiv" src="./assets/buttons/btn_arxiv.svg" height="36"></picture></a>&nbsp;
+  <a href="https://yonghdong.github.io/blog/trqam/"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/buttons/btn_blog_dark.svg"><img alt="blog" src="./assets/buttons/btn_blog.svg" height="36"></picture></a>
+</p>
 
 
 <p align="center">

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="94" height="36" viewBox="0 0 94 36" role="img" aria-label="arXiv">
+<rect x="0.5" y="0.5" width="93" height="35" rx="17.5" fill="#e6e6e6"/>
+<g transform="translate(18 11) scale(0.5833)" fill="none" stroke="#111111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z"/><path d="M4 9h16M9 4v16"/></g>
+<text x="40" y="23" fill="#111111" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="700">arXiv</text>
+</svg>

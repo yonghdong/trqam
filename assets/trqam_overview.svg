@@ -14,13 +14,14 @@ text { font-family: "Fira Sans", "Source Sans Pro", "Segoe UI", "Helvetica Neue"
 .orange-head { fill: #ef8f00; }
 .link { stroke: #000; stroke-width: 9; }
 .link-head { fill: #000; }
-.all { animation: cyc 16.0s linear infinite; }
+.all { animation: cyc 9.0s linear 1 forwards; }
 .wob-a, .wob-b { transform-box: view-box; transform-origin: 885px 552px; }
 .wob-a { animation: wa 5s linear infinite; }
 .wob-b { animation: wb 5s linear infinite; }
 .band-up { animation: bu 4.8s ease-in-out infinite; }
 .band-down { animation: bd 4.8s ease-in-out infinite; }
 .pulse { transform-box: fill-box; transform-origin: center; animation: pl 4.8s ease-in-out infinite; }
+.wob-a, .wob-b, .band-up, .band-down, .pulse { animation: none; }
 
 @media (prefers-color-scheme: dark) {
   .title { fill: #e6e6e6; }
@@ -33,25 +34,25 @@ text { font-family: "Fira Sans", "Source Sans Pro", "Segoe UI", "Helvetica Neue"
   path { stroke-dashoffset: 0 !important; }
   g, .all { opacity: 1 !important; }
 }
-@keyframes d1 { 0%, 1.875% { stroke-dashoffset: 1; animation-timing-function: ease-in-out; } 10.625%, 100% { stroke-dashoffset: 0; } }
-@keyframes f2 { 0%, 7.500% { opacity: 0; animation-timing-function: ease-out; } 10.625%, 100% { opacity: 1; } }
-@keyframes f3 { 0%, 11.250% { opacity: 0; animation-timing-function: ease-out; } 14.375%, 100% { opacity: 1; } }
-@keyframes d4 { 0%, 13.750% { stroke-dashoffset: 1; animation-timing-function: ease-in-out; } 21.875%, 100% { stroke-dashoffset: 0; } }
-@keyframes d5 { 0%, 21.250% { stroke-dashoffset: 1; animation-timing-function: ease-in-out; } 27.500%, 100% { stroke-dashoffset: 0; } }
-@keyframes f6 { 0%, 26.875% { opacity: 0; animation-timing-function: ease-out; } 28.438%, 100% { opacity: 1; } }
-@keyframes d7 { 0%, 22.500% { stroke-dashoffset: 1; animation-timing-function: ease-in-out; } 28.750%, 100% { stroke-dashoffset: 0; } }
-@keyframes f8 { 0%, 28.125% { opacity: 0; animation-timing-function: ease-out; } 29.688%, 100% { opacity: 1; } }
-@keyframes f9 { 0%, 26.250% { opacity: 0; animation-timing-function: ease-out; } 29.375%, 100% { opacity: 1; } }
-@keyframes f10 { 0%, 31.250% { opacity: 0; animation-timing-function: ease-out; } 34.375%, 100% { opacity: 1; } }
-@keyframes d11 { 0%, 34.375% { stroke-dashoffset: 1; animation-timing-function: ease-in-out; } 42.500%, 100% { stroke-dashoffset: 0; } }
-@keyframes d12 { 0%, 41.250% { stroke-dashoffset: 1; animation-timing-function: ease-in-out; } 49.375%, 100% { stroke-dashoffset: 0; } }
-@keyframes f13 { 0%, 48.750% { opacity: 0; animation-timing-function: ease-out; } 50.313%, 100% { opacity: 1; } }
-@keyframes d14 { 0%, 42.500% { stroke-dashoffset: 1; animation-timing-function: ease-in-out; } 50.625%, 100% { stroke-dashoffset: 0; } }
-@keyframes f15 { 0%, 50.000% { opacity: 0; animation-timing-function: ease-out; } 51.562%, 100% { opacity: 1; } }
-@keyframes f16 { 0%, 51.250% { opacity: 0; animation-timing-function: ease-out; } 54.375%, 100% { opacity: 1; } }
-@keyframes f17 { 0%, 40.000% { opacity: 0; animation-timing-function: ease-out; } 43.125%, 100% { opacity: 1; } }
-@keyframes f18 { 0%, 51.250% { opacity: 0; animation-timing-function: ease-out; } 54.375%, 100% { opacity: 1; } }
-@keyframes cyc { 0% { opacity: 0; } 1.875% { opacity: 1; } 96.250% { opacity: 1; } 100% { opacity: 0; } }
+@keyframes d1 { 0%, 3.333% { stroke-dashoffset: 1; animation-timing-function: ease-in-out; } 18.889%, 100% { stroke-dashoffset: 0; } }
+@keyframes f2 { 0%, 13.333% { opacity: 0; animation-timing-function: ease-out; } 18.889%, 100% { opacity: 1; } }
+@keyframes f3 { 0%, 20.000% { opacity: 0; animation-timing-function: ease-out; } 25.556%, 100% { opacity: 1; } }
+@keyframes d4 { 0%, 24.444% { stroke-dashoffset: 1; animation-timing-function: ease-in-out; } 38.889%, 100% { stroke-dashoffset: 0; } }
+@keyframes d5 { 0%, 37.778% { stroke-dashoffset: 1; animation-timing-function: ease-in-out; } 48.889%, 100% { stroke-dashoffset: 0; } }
+@keyframes f6 { 0%, 47.778% { opacity: 0; animation-timing-function: ease-out; } 50.556%, 100% { opacity: 1; } }
+@keyframes d7 { 0%, 40.000% { stroke-dashoffset: 1; animation-timing-function: ease-in-out; } 51.111%, 100% { stroke-dashoffset: 0; } }
+@keyframes f8 { 0%, 50.000% { opacity: 0; animation-timing-function: ease-out; } 52.778%, 100% { opacity: 1; } }
+@keyframes f9 { 0%, 46.667% { opacity: 0; animation-timing-function: ease-out; } 52.222%, 100% { opacity: 1; } }
+@keyframes f10 { 0%, 55.556% { opacity: 0; animation-timing-function: ease-out; } 61.111%, 100% { opacity: 1; } }
+@keyframes d11 { 0%, 61.111% { stroke-dashoffset: 1; animation-timing-function: ease-in-out; } 75.556%, 100% { stroke-dashoffset: 0; } }
+@keyframes d12 { 0%, 73.333% { stroke-dashoffset: 1; animation-timing-function: ease-in-out; } 87.778%, 100% { stroke-dashoffset: 0; } }
+@keyframes f13 { 0%, 86.667% { opacity: 0; animation-timing-function: ease-out; } 89.444%, 100% { opacity: 1; } }
+@keyframes d14 { 0%, 75.556% { stroke-dashoffset: 1; animation-timing-function: ease-in-out; } 90.000%, 100% { stroke-dashoffset: 0; } }
+@keyframes f15 { 0%, 88.889% { opacity: 0; animation-timing-function: ease-out; } 91.667%, 100% { opacity: 1; } }
+@keyframes f16 { 0%, 91.111% { opacity: 0; animation-timing-function: ease-out; } 96.667%, 100% { opacity: 1; } }
+@keyframes f17 { 0%, 71.111% { opacity: 0; animation-timing-function: ease-out; } 76.667%, 100% { opacity: 1; } }
+@keyframes f18 { 0%, 91.111% { opacity: 0; animation-timing-function: ease-out; } 96.667%, 100% { opacity: 1; } }
+@keyframes cyc { 0% { opacity: 0; } 3.333% { opacity: 1; } 93.333% { opacity: 1; } 100% { opacity: 1; } }
 @keyframes wa { 0% { transform: rotate(0deg); } 12.5% { transform: rotate(-2.1deg); } 25% { transform: rotate(-3deg); } 37.5% { transform: rotate(-2.1deg); } 50% { transform: rotate(0deg); } 62.5% { transform: rotate(2.1deg); } 75% { transform: rotate(3deg); } 87.5% { transform: rotate(2.1deg); } 100% { transform: rotate(0deg); } }
 @keyframes wb { 0% { transform: rotate(0deg); } 12.5% { transform: rotate(2.1deg); } 25% { transform: rotate(3deg); } 37.5% { transform: rotate(2.1deg); } 50% { transform: rotate(0deg); } 62.5% { transform: rotate(-2.1deg); } 75% { transform: rotate(-3deg); } 87.5% { transform: rotate(-2.1deg); } 100% { transform: rotate(0deg); } }
 @keyframes bu { 0%, 100% { transform: translate(0, 0); } 50% { transform: translate(-4px, -9px); } }
@@ -68,19 +69,19 @@ text { font-family: "Fira Sans", "Source Sans Pro", "Segoe UI", "Helvetica Neue"
 <rect class="box" x="6" y="185" width="592" height="812" rx="42" />
 <rect class="box" x="703" y="185" width="594" height="812" rx="42" />
 <rect class="box-ours" x="1390" y="185" width="594" height="812" rx="42" />
-<path class="grey" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1" style="animation: d1 16.0s linear infinite;" d="M 77 737 C 77 620, 180 525, 305 525 C 430 525, 527 430, 527 316" />
-<g opacity="0" style="animation: f2 16.0s linear infinite;"><text class="label" x="292" y="852" text-anchor="middle">useful</text><text class="label" x="292" y="932" text-anchor="middle">pretrained policy</text></g>
-<g opacity="0" style="animation: f3 16.0s linear infinite;"><line class="link" x1="600" y1="540" x2="652" y2="540" /><polygon class="link-head" points="645,512 700,540 645,568" /></g>
-<path class="grey" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1" style="animation: d4 16.0s linear infinite;" d="M 770 737 C 770 620, 873 525, 998 525 C 1123 525, 1220 430, 1220 316" />
-<g class="wob-a"><path class="red" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1" style="animation: d5 16.0s linear infinite;" d="M 885 552 C 950 510, 1000 450, 1028 390" /><g opacity="0" style="animation: f6 16.0s linear infinite;"><polygon class="red-head" points="0,0 -44,-20 -44,20" transform="translate(1040 368) rotate(-65)" /></g></g>
-<g class="wob-b"><path class="red" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1" style="animation: d7 16.0s linear infinite;" d="M 885 552 C 980 540, 1060 550, 1145 630" /><g opacity="0" style="animation: f8 16.0s linear infinite;"><polygon class="red-head" points="0,0 -44,-20 -44,20" transform="translate(1165 650) rotate(43)" /></g></g>
-<g opacity="0" style="animation: f9 16.0s linear infinite;"><text class="label" x="1000" y="872" text-anchor="middle">destructive drift</text><text class="label" x="1000" y="952" text-anchor="middle">e.g., QAM, QAM-E</text></g>
-<g opacity="0" style="animation: f10 16.0s linear infinite;"><line class="link" x1="1299" y1="540" x2="1338" y2="540" /><polygon class="link-head" points="1332,512 1387,540 1332,568" /></g>
-<path class="grey" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1" style="animation: d11 16.0s linear infinite;" d="M 1447 755 C 1470 640, 1560 548, 1680 545 C 1800 542, 1895 440, 1895 335" />
-<g class="band-up"><path class="orange" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1" style="animation: d12 16.0s linear infinite;" d="M 1440 758 C 1462 630, 1545 524, 1680 520 C 1795 516, 1858 445, 1878 362" /><g opacity="0" style="animation: f13 16.0s linear infinite;"><polygon class="orange-head" points="0,0 -40,-18 -40,18" transform="translate(1886 336) rotate(-75)" /></g></g>
-<g class="band-down"><path class="orange" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1" style="animation: d14 16.0s linear infinite;" d="M 1446 760 C 1480 660, 1570 572, 1690 568 C 1810 563, 1870 470, 1902 398" /><g opacity="0" style="animation: f15 16.0s linear infinite;"><polygon class="orange-head" points="0,0 -40,-18 -40,18" transform="translate(1914 372) rotate(-66)" /></g></g>
-<g opacity="0" style="animation: f16 16.0s linear infinite;"><g class="pulse"><text class="lambda" x="1870" y="600" text-anchor="middle">&#955;</text></g></g>
-<g opacity="0" style="animation: f17 16.0s linear infinite;"><text class="label" x="1448" y="322" text-anchor="start">controlled</text><text class="label" x="1448" y="406" text-anchor="start">deviation</text></g>
-<g opacity="0" style="animation: f18 16.0s linear infinite;"><text class="label" x="1690" y="865" text-anchor="middle">adapts via</text><text class="label" x="1690" y="948" text-anchor="middle">dual descent</text></g>
+<path class="grey" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1" style="animation: d1 9.0s linear 1 forwards;" d="M 77 737 C 77 620, 180 525, 305 525 C 430 525, 527 430, 527 316" />
+<g opacity="0" style="animation: f2 9.0s linear 1 forwards;"><text class="label" x="292" y="852" text-anchor="middle">useful</text><text class="label" x="292" y="932" text-anchor="middle">pretrained policy</text></g>
+<g opacity="0" style="animation: f3 9.0s linear 1 forwards;"><line class="link" x1="600" y1="540" x2="652" y2="540" /><polygon class="link-head" points="645,512 700,540 645,568" /></g>
+<path class="grey" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1" style="animation: d4 9.0s linear 1 forwards;" d="M 770 737 C 770 620, 873 525, 998 525 C 1123 525, 1220 430, 1220 316" />
+<g class="wob-a"><path class="red" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1" style="animation: d5 9.0s linear 1 forwards;" d="M 885 552 C 950 510, 1000 450, 1028 390" /><g opacity="0" style="animation: f6 9.0s linear 1 forwards;"><polygon class="red-head" points="0,0 -44,-20 -44,20" transform="translate(1040 368) rotate(-65)" /></g></g>
+<g class="wob-b"><path class="red" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1" style="animation: d7 9.0s linear 1 forwards;" d="M 885 552 C 980 540, 1060 550, 1145 630" /><g opacity="0" style="animation: f8 9.0s linear 1 forwards;"><polygon class="red-head" points="0,0 -44,-20 -44,20" transform="translate(1165 650) rotate(43)" /></g></g>
+<g opacity="0" style="animation: f9 9.0s linear 1 forwards;"><text class="label" x="1000" y="872" text-anchor="middle">destructive drift</text><text class="label" x="1000" y="952" text-anchor="middle">e.g., QAM, QAM-E</text></g>
+<g opacity="0" style="animation: f10 9.0s linear 1 forwards;"><line class="link" x1="1299" y1="540" x2="1338" y2="540" /><polygon class="link-head" points="1332,512 1387,540 1332,568" /></g>
+<path class="grey" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1" style="animation: d11 9.0s linear 1 forwards;" d="M 1447 755 C 1470 640, 1560 548, 1680 545 C 1800 542, 1895 440, 1895 335" />
+<g class="band-up"><path class="orange" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1" style="animation: d12 9.0s linear 1 forwards;" d="M 1440 758 C 1462 630, 1545 524, 1680 520 C 1795 516, 1858 445, 1878 362" /><g opacity="0" style="animation: f13 9.0s linear 1 forwards;"><polygon class="orange-head" points="0,0 -40,-18 -40,18" transform="translate(1886 336) rotate(-75)" /></g></g>
+<g class="band-down"><path class="orange" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1" style="animation: d14 9.0s linear 1 forwards;" d="M 1446 760 C 1480 660, 1570 572, 1690 568 C 1810 563, 1870 470, 1902 398" /><g opacity="0" style="animation: f15 9.0s linear 1 forwards;"><polygon class="orange-head" points="0,0 -40,-18 -40,18" transform="translate(1914 372) rotate(-66)" /></g></g>
+<g opacity="0" style="animation: f16 9.0s linear 1 forwards;"><g class="pulse"><text class="lambda" x="1870" y="600" text-anchor="middle">&#955;</text></g></g>
+<g opacity="0" style="animation: f17 9.0s linear 1 forwards;"><text class="label" x="1448" y="322" text-anchor="start">controlled</text><text class="label" x="1448" y="406" text-anchor="start">deviation</text></g>
+<g opacity="0" style="animation: f18 9.0s linear 1 forwards;"><text class="label" x="1690" y="865" text-anchor="middle">adapts via</text><text class="label" x="1690" y="948" text-anchor="middle">dual descent</text></g>
 </g>
 </svg>
