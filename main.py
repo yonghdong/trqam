@@ -252,8 +252,14 @@ def main(_):
                     print("  -> Loaded into target_actor_bc_flow")
                 loaded = True
 
-            # CGQL/IFQL: actor
-            flow_actor_agents = ['cgql', 'ifql']
+            # IFQL: actor_flow
+            if 'modules_actor_flow' in current_params:
+                new_params['modules_actor_flow'] = pretrained_flow
+                print("  -> Loaded into actor_flow")
+                loaded = True
+
+            # CGQL: actor
+            flow_actor_agents = ['cgql']
             if 'modules_actor' in current_params and config['agent_name'] in flow_actor_agents:
                 new_params['modules_actor'] = pretrained_flow
                 print("  -> Loaded into actor")
